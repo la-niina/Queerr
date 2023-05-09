@@ -39,7 +39,7 @@ export const Content = () => {
               }}
               h6
             >
-              16th November 2019 | Delhi - NCR
+              Last updated Jan 2023, 9th | Uganda - KLA
             </Text>
             <Button
               auto
@@ -128,8 +128,9 @@ export const Content = () => {
                 opportunities to work in these jobs.
               </Text>
               <Spacer y={1} />
-              <Text h3 weight="bold" >
-              {"''"} we plan to create the Queerr medical insurance program {"''"}
+              <Text h3 weight="bold">
+                {"''"} we plan to create the Queerr medical insurance program{" "}
+                {"''"}
               </Text>
               <Spacer y={1} />
               <Text h6 size={16}>
