@@ -1,5 +1,5 @@
 import { Navbar, Button, Text, Image, Dropdown } from "@nextui-org/react";
-import { Layout } from "../component/HomeActivity/Layout.js";
+import { Layout } from "../component/FlagActivity/Layout.js";
 import { icons } from "../component/Assets/Icons.js";
 import Head from "next/head.js";
 
@@ -44,14 +44,13 @@ export default function App() {
               height={48}
             />
             <Text
-              b
-              color="inherit"
-              hideIn="xs"
-              href="/"
               onClick={() => (window.location = "/")}
               css={{
                 cursor: "pointer",
               }}
+              b
+              color="inherit"
+              hideIn="xs"
             >
               Queerr
             </Text>
@@ -63,9 +62,7 @@ export default function App() {
             isCompact
             isCursorHighlightRounded
           >
-            <Navbar.Link isActive href="/">
-              Home
-            </Navbar.Link>
+            <Navbar.Link href="/">Home</Navbar.Link>
             <Dropdown isBordered>
               <Navbar.Item>
                 <Dropdown.Button

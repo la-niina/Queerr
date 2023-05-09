@@ -1,5 +1,5 @@
 import { Navbar, Button, Text, Image, Dropdown } from "@nextui-org/react";
-import { Layout } from "../component/HomeActivity/Layout.js";
+import { Layout } from "../component/QueerrActivity/Layout.js";
 import { icons } from "../component/Assets/Icons.js";
 import Head from "next/head.js";
 
@@ -44,14 +44,13 @@ export default function App() {
               height={48}
             />
             <Text
-              b
-              color="inherit"
-              hideIn="xs"
-              href="/"
               onClick={() => (window.location = "/")}
               css={{
                 cursor: "pointer",
               }}
+              b
+              color="inherit"
+              hideIn="xs"
             >
               Queerr
             </Text>
@@ -63,9 +62,7 @@ export default function App() {
             isCompact
             isCursorHighlightRounded
           >
-            <Navbar.Link isActive href="/">
-              Home
-            </Navbar.Link>
+            <Navbar.Link href="/">Home</Navbar.Link>
             <Dropdown isBordered>
               <Navbar.Item>
                 <Dropdown.Button
@@ -128,13 +125,15 @@ export default function App() {
                     weight="bold"
                     onClick={() => (window.location.href = "#")}
                   >
-                     Usage Metrics
+                    Usage Metrics
                   </Text>
                 </Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
             <Navbar.Link href="#">Community</Navbar.Link>
-            <Navbar.Link href="/queerrcard">Queerr insurance</Navbar.Link>
+            <Navbar.Link isActive href="/queerrcard">
+              Queerr insurance
+            </Navbar.Link>
             <Navbar.Link>
               <Button auto color="primary" rounded flat>
                 Sponser

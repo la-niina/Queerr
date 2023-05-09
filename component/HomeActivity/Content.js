@@ -1,4 +1,12 @@
-import { Text, Spacer, Grid, Col, Button, Image, Card } from "@nextui-org/react";
+import {
+  Text,
+  Spacer,
+  Grid,
+  Col,
+  Button,
+  Image,
+  Card,
+} from "@nextui-org/react";
 import { Box } from "./Box.js";
 
 export const Content = () => {
@@ -18,10 +26,11 @@ export const Content = () => {
               }}
               weight="bold"
             >
-              Career fair and confluence for LGBTQ+ community
+              Queerr: Building a More Inclusive Future for the LGBTQIA+
+              Community in Africa
             </Text>
-            <Text h4 weight="light">
-              One of it's kind LGBTQ+ Job fair
+            <Text h4>
+              Supporting the LGBTQIA+ community in Africa and beyond
             </Text>
             <Text
               css={{
@@ -42,7 +51,7 @@ export const Content = () => {
                 top: "10px",
               }}
             >
-              Register now
+              Join Queerr
             </Button>
           </Col>
         </Grid>
@@ -51,8 +60,8 @@ export const Content = () => {
           <Col>
             <Image
               alt="alternate"
-              width="80%"
-              height="80%"
+              width="100%"
+              height="100%"
               src="/community.png"
             />
           </Col>
@@ -60,42 +69,87 @@ export const Content = () => {
       </Grid.Container>
 
       <Grid.Container>
-        <Grid xs={12} sm={12}
-        css={{
-           padding: "20px",
-        }}>
-            <Card
+        <Grid
+          xs={12}
+          sm={12}
+          css={{
+            padding: "20px",
+          }}
+        >
+          <Card
             isHoverable
             isPressable
             css={{
-                background: "#232228",
-                borderRadius: "30px",
-                zIndex: 10,
-                shadow: true,
-                boxShadow: "0 0 0 6px #f4aab9, 0 0 0 12px #66ccff"
-            }}>
+              borderRadius: "30px",
+              zIndex: 10,
+              shadow: true,
+              boxShadow: "0 0 0 6px #f4aab9, 0 0 0 12px #66ccff",
+            }}
+          >
             <Col
-            css={{
+              css={{
                 padding: "20px",
-             }}>
-            <Text h2 weight="bold" color="primary">About Queerr</Text>
-            <Text h6 size={16} weight="light" color="secondary">
-              Time and tide certainly wait for none. Change is the only constant
-              that we have known, "Q-rious" a one of it's kind event platform
-              for corporates to network with and understand the perspectives of
-              the LGBTQ+ community and also explore employability options.
-            </Text>
-            <Spacer y={1} />
-            <Text h3 weight="bold" color="primary">The event is on an "Invite-only" basis.</Text>
-            <Spacer y={1} />
-            <Text h6 size={16} weight="light" color="secondary">
-              Conceptualized by Stockroom.io and Equiv along with Humsafar Trust
-              on the extremely successful model of Women Changemakers, this
-              event is completely free to attend for the members of the LGBTQ+
-              community.
-            </Text>
-          </Col>
-            </Card>
+              }}
+            >
+              <Text h2 weight="bold">
+                About Queerr
+              </Text>
+              <Text h6 size={16}>
+                Queerr is a community-based organization dedicated to providing
+                information, support, and empowerment for LGBTQIA+ individuals
+                in East Africa. We believe in creating a more inclusive and
+                accepting future for all, regardless of sexual orientation or
+                gender identity.
+              </Text>
+              <Spacer y={1} />
+              <Text h6 size={16}>
+                Our mission is to provide a safe space for LGBTQIA+ persons to
+                seek support, resources, and community connections. We offer
+                educational resources, advocacy, and awareness campaigns to
+                promote understanding and acceptance of the LGBTQIA+ community.
+              </Text>
+              <Spacer y={1} />
+              <Text h6 size={16}>
+                In addition to our current services, we plan to expand our
+                support to include hormonal transitioning for transgender and
+                non-binary individuals in the future. Our goal is to provide
+                both financial and informational resources to ensure that
+                everyone has access to the resources they need to live their
+                lives authentically.
+              </Text>
+              <Spacer y={1} />
+              <Text h6 size={16}>
+                We also plan to train and educate LGBTQIA+ individuals in
+                various skills, including technology, handiwork, social media as
+                a business, podcasting, and much more. Our training programs aim
+                to help individuals who are unable to start something for
+                themselves, acquire skills that can enable them to start
+                income-generating activities, and provide them with
+                opportunities to work in these jobs.
+              </Text>
+              <Spacer y={1} />
+              <Text h3 weight="bold" >
+              {"''"} we plan to create the Queerr medical insurance program {"''"}
+              </Text>
+              <Spacer y={1} />
+              <Text h6 size={16}>
+                To support this initiative, we plan to create the Queerr medical
+                insurance program, which will allow individuals to access
+                medical resources for hormonal transitioning regardless of their
+                location. We will provide financial support through mobile
+                banking and supported cards, ensuring that individuals in places
+                that do not support LGBTQIA+ persons will have access to the
+                support they need.
+              </Text>
+              <Spacer y={1} />
+              <Text h6 size={16}>
+                At Queerr, we believe in building a better future for all
+                LGBTQIA+ individuals in East Africa and beyond. Join us in our
+                mission to create a more inclusive and accepting world for all.
+              </Text>
+              <Spacer y={1} />
+            </Col>
+          </Card>
         </Grid>
       </Grid.Container>
     </>
