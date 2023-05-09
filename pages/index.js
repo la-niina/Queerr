@@ -9,6 +9,7 @@ import {
   Grid,
   Col,
   Collapse,
+  Spacer,
 } from "@nextui-org/react";
 import { Layout } from "../component/HomeActivity/Layout.js";
 import { icons } from "../component/Assets/Icons.js";
@@ -212,14 +213,11 @@ export default function App() {
                   <Text h3 weight="bold">
                     Sexual orientation
                   </Text>
-
+                  <Spacer y={1}/>
                   <Text h3 weight="bold">
-                    Sexual orientation
+                    Usage Metrics
                   </Text>
-
-                  <Text h3 weight="bold">
-                    Sexual orientation
-                  </Text>
+                  <Spacer y={1}/>
                 </Col>
               </Collapse>
             </Navbar.CollapseItem>
