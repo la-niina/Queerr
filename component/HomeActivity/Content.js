@@ -49,6 +49,7 @@ export const Content = () => {
               css={{
                 position: "relative",
                 top: "10px",
+                zIndex: 5
               }}
             >
               Join Queerr

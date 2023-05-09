@@ -1,4 +1,15 @@
-import { Navbar, Button, Text, Image, Dropdown } from "@nextui-org/react";
+import {
+  Navbar,
+  Button,
+  Text,
+  Image,
+  Dropdown,
+  Card,
+  Link,
+  Grid,
+  Col,
+  Collapse,
+} from "@nextui-org/react";
 import { Layout } from "../component/HomeActivity/Layout.js";
 import { icons } from "../component/Assets/Icons.js";
 import Head from "next/head.js";
@@ -128,7 +139,7 @@ export default function App() {
                     weight="bold"
                     onClick={() => (window.location.href = "#")}
                   >
-                     Usage Metrics
+                    Usage Metrics
                   </Text>
                 </Dropdown.Item>
               </Dropdown.Menu>
@@ -141,6 +152,94 @@ export default function App() {
               </Button>
             </Navbar.Link>
           </Navbar.Content>
+          <Navbar.Toggle showIn="xs" />
+
+          <Navbar.Collapse css={{ zIndex: 20, p: 0 }}>
+            <Navbar.CollapseItem>
+              <Card css={{ p: "0", w: "100%", zIndex: 20 }}>
+                <Card.Header>
+                  <Image
+                    alt="nextui logo"
+                    src="/self.png"
+                    width="100%"
+                    height="100%"
+                  />
+                  <Grid.Container css={{ pl: "$1" }}>
+                    <Grid xs={12}>
+                      <Text h2 css={{ lineHeight: "$xs" }}>
+                        Queerr
+                      </Text>
+                    </Grid>
+                  </Grid.Container>
+                </Card.Header>
+
+                <Card.Body css={{ py: "$2" }}>
+                  <Text>
+                    At Queerr, we believe in building a better future for all
+                    LGBTQIA+ individuals in Africa and beyond. Join us in our
+                    mission to create a more inclusive and accepting world for
+                    all.
+                  </Text>
+                </Card.Body>
+                <Card.Footer>
+                  <Link
+                    icon
+                    color="primary"
+                    target="_blank"
+                    href="https://queerr.vercel.app/"
+                  >
+                    Moluccus
+                  </Link>
+                </Card.Footer>
+              </Card>
+            </Navbar.CollapseItem>
+
+            <Navbar.CollapseItem>
+              <Card isHoverable css={{ width: "100%", padding: "10px" }}>
+                <Text h3 weight="bold">
+                  Home
+                </Text>
+              </Card>
+            </Navbar.CollapseItem>
+
+            <Navbar.CollapseItem>
+              <Collapse
+                title="Sexual orientation"
+                shadow
+                css={{ width: "100%" }}
+              >
+                <Col>
+                  <Text h3 weight="bold">
+                    Sexual orientation
+                  </Text>
+
+                  <Text h3 weight="bold">
+                    Sexual orientation
+                  </Text>
+
+                  <Text h3 weight="bold">
+                    Sexual orientation
+                  </Text>
+                </Col>
+              </Collapse>
+            </Navbar.CollapseItem>
+
+            <Navbar.CollapseItem>
+              <Card isHoverable css={{ width: "100%", padding: "10px" }}>
+                <Text h3 weight="bold">
+                  Community
+                </Text>
+              </Card>
+            </Navbar.CollapseItem>
+
+            <Navbar.CollapseItem>
+              <Card isHoverable css={{ width: "100%", padding: "10px" }}>
+                <Text h3 weight="bold">
+                  Queerr insurance
+                </Text>
+              </Card>
+            </Navbar.CollapseItem>
+          </Navbar.Collapse>
         </Navbar>
       </Layout>
     </>
