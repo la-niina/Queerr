@@ -78,7 +78,7 @@ export const Content = () => {
       objectFit: "cover",
       img: "https://static.wikia.nocookie.net/sexuality/images/f/fa/Aceflux_flag.png/revision/latest?cb=20220721041614",
       description:
-        "The information provided on here is first researched but you should also do some research for you don't pride full context...",
+        "The information provided on here is first researched but you should also do some research for yourself since we don't provide full context...",
     },
   ];
 
