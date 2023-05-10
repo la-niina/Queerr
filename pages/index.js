@@ -196,8 +196,11 @@ export default function App() {
             </Navbar.CollapseItem>
 
             <Navbar.CollapseItem>
-              <Card isHoverable css={{ width: "100%", padding: "10px" }}>
-                <Text h3 weight="bold">
+              <Card
+                isHoverable
+                css={{ width: "100%", padding: "10px", cursor: "pointer" }}
+              >
+                <Text h3 weight="bold" onClick={() => (window.location = "/")}>
                   Home
                 </Text>
               </Card>
@@ -210,21 +213,29 @@ export default function App() {
                 css={{ width: "100%" }}
               >
                 <Col>
-                  <Text h3 weight="bold">
+                  <Text
+                    h3
+                    weight="bold"
+                    onClick={() => (window.location = "/flag")}
+                  >
                     Sexual orientation
                   </Text>
-                  <Spacer y={1}/>
-                  <Text h3 weight="bold">
+                  <Spacer y={1} />
+                  <Text
+                    h3
+                    weight="bold"
+                    onClick={() => (window.location = "#")}
+                  >
                     Usage Metrics
                   </Text>
-                  <Spacer y={1}/>
+                  <Spacer y={1} />
                 </Col>
               </Collapse>
             </Navbar.CollapseItem>
 
             <Navbar.CollapseItem>
               <Card isHoverable css={{ width: "100%", padding: "10px" }}>
-                <Text h3 weight="bold">
+                <Text h3 weight="bold" onClick={() => (window.location = "#")}>
                   Community
                 </Text>
               </Card>
@@ -232,11 +243,16 @@ export default function App() {
 
             <Navbar.CollapseItem>
               <Card isHoverable css={{ width: "100%", padding: "10px" }}>
-                <Text h3 weight="bold">
+                <Text
+                  h3
+                  weight="bold"
+                  onClick={() => (window.location = "/queerrcard")}
+                >
                   Queerr insurance
                 </Text>
               </Card>
             </Navbar.CollapseItem>
+            <Spacer y={5} />
           </Navbar.Collapse>
         </Navbar>
       </Layout>
