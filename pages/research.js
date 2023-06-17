@@ -210,7 +210,7 @@ export default function App() {
               </Card.Body>
             </Card>
 
-            <Spacer y={1} />
+            <Spacer y={0.5} />
             <Card
               css={{
                 w: "100%",
@@ -231,7 +231,7 @@ export default function App() {
               </Card.Body>
             </Card>
 
-            <Spacer y={1} />
+            <Spacer y={0.5} />
             <Card
               css={{
                 w: "100%",
@@ -252,7 +252,7 @@ export default function App() {
               </Card.Body>
             </Card>
 
-            <Spacer y={1} />
+            <Spacer y={0.5} />
             <Card
               css={{
                 w: "100%",
@@ -273,7 +273,7 @@ export default function App() {
               </Card.Body>
             </Card>
 
-            <Spacer y={1} />
+            <Spacer y={0.5} />
             <Card
               css={{
                 w: "100%",

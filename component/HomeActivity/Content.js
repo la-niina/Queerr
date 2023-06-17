@@ -26,8 +26,8 @@ export const Content = () => {
               }}
               weight="bold"
             >
-              Queerr: Building a More Inclusive Future for the LGBTQIA+
-              Community in Africa
+              QUEERR: BUILDING A MORE INCLUSIVE FUTURE FOR THE LGBTQIA+
+              COMMUNITY IN THE WORLD
             </Text>
             <Text h4>
               Supporting the LGBTQIA+ community in Africa and beyond
@@ -49,7 +49,7 @@ export const Content = () => {
               css={{
                 position: "relative",
                 top: "10px",
-                zIndex: 5
+                zIndex: 5,
               }}
             >
               Join Queerr
