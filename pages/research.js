@@ -15,7 +15,7 @@ import {
   useModal,
   Input,
 } from "@nextui-org/react";
-import { Layout } from "../component/HomeActivity/Layout.js";
+import { Layout } from "../component/FlagActivity/Layout.js";
 import { icons } from "../component/Assets/Icons.js";
 
 export default function App() {
