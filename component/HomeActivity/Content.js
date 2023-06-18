@@ -14,16 +14,26 @@ export const Content = () => {
       <Grid.Container
         css={{
           h: "auto",
+          justifyContent: "center",
+          alignContent: "center"
         }}
       >
-        <Grid xs={12} sm={6}>
+        <Grid xs={12} sm={6}
+        css={{
+          justifyContent: "center",
+          alignContent: "center",
+          justifyItems: "center",
+          alignItems: "center"
+        }}>
           <Col
             css={{
               padding: "20px",
+              justifyContent: "center",
+              alignContent: "center"
             }}
           >
             <Text
-              h1
+              h4
               css={{
                 textGradient: "45deg, $purple600 -20%, $pink600 100%",
               }}
