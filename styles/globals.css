@@ -1,7 +1,29 @@
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
   display: none;
 }
 
 .custom-tinymce-body-class .tox-tinymce {
   z-index: 1000 !important; /* Adjust the z-index value as needed */
+}
+
+.pp-ssb-btn::before {
+  width: 50px;
+  height: 38px;
+  margin-top: 2px;
+  border: 0;
+  padding-left: 15px;
+  background-repeat: no-repeat;
+  background-size: 50px;
+  background-position: 0 -5px;
+  background-image: url(https://www.gendergp.com/wp-content/plugins/powerpress/images/modern_icon_sprite_2021.svg);
+}
+
+.pp-ssb-btn::after {
+  content: url(https://www.gendergp.com/wp-content/plugins/powerpress/images/arrow.svg);
+  width: 20px;
+  display: inline-block;
+  float: right;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }

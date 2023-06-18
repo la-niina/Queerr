@@ -7,6 +7,10 @@ import {
   Modal,
   useModal,
   Input,
+  Spacer,
+  Button,
+  Row,
+  Container,
 } from "@nextui-org/react";
 import { Editor } from "@tinymce/tinymce-react";
 import { React, useEffect, useState } from "react";
@@ -48,7 +52,7 @@ export const Content = () => {
   });
 
   return (
-    <>
+    <Container fluid xl>
       <Grid.Container
         css={{
           h: "auto",
@@ -193,18 +197,71 @@ export const Content = () => {
               <Col
                 css={{
                   p: "$5",
+                  justifyContent: "center",
+                  alignContent: "center",
+                  alignItems: "center",
                 }}
               >
+                <Text h3>Looking for something?</Text>
                 <Input
                   css={{
                     w: "100%",
                   }}
+                  labelRight=".org" 
                 />
+                <Spacer y={1} />
+                <Text h3>Subscribe to Podcast</Text>
+                <Button
+                  rounded
+                  auto
+                  bordered
+                  color="gradient"
+                  className="pp-ssb-btn"
+                  css={{
+                    w: "100%",
+                    background:
+                      "radial-gradient(circle,transparent 1%,#ebebeb 1%) center/15000% #ebebeb",
+                  }}
+                >
+                  Podcast
+                </Button>
+                <Spacer y={1} />
+
+                <Button
+                  rounded
+                  auto
+                  bordered
+                  color="gradient"
+                  className="pp-ssb-btn"
+                  css={{
+                    w: "100%",
+                    background:
+                      "radial-gradient(circle,transparent 1%,#ebebeb 1%) center/15000% #ebebeb",
+                  }}
+                >
+                  Podcast
+                </Button>
+                <Spacer y={1} />
+
+                <Button
+                  rounded
+                  auto
+                  bordered
+                  color="gradient"
+                  className="pp-ssb-btn"
+                  css={{
+                    w: "100%",
+                    background:
+                      "radial-gradient(circle,transparent 1%,#ebebeb 1%) center/15000% #ebebeb",
+                  }}
+                >
+                  Podcast
+                </Button>
               </Col>
             </Grid>
           </Grid.Container>
         </Modal.Body>
       </Modal>
-    </>
+    </Container>
   );
 };
