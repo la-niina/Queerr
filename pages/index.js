@@ -148,7 +148,7 @@ export default function App() {
 
           <Navbar.CollapseItem>
             <Card isHoverable css={{ width: "100%", padding: "10px" }}>
-              <Text h3 weight="bold" onClick={() => (window.location = "#")}>
+              <Text h3 weight="bold" onClick={() => (window.location = "/community")}>
                 Community
               </Text>
             </Card>
