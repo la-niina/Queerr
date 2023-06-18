@@ -1,10 +1,4 @@
-import {
-  Spacer,
-  Grid,
-  Col,
-  Button,
-  Input,
-} from "@nextui-org/react";
+import { Spacer, Grid, Col, Button, Input } from "@nextui-org/react";
 import { useRouter } from "next/router";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -107,8 +101,33 @@ export const Content = () => {
               ],
               mobile: {
                 menubar: true,
-                plugins: 'autosave lists autolink',
-                toolbar: 'undo bold italic styles'
+                plugins: [
+                  "advlist",
+                  "autolink",
+                  "lists",
+                  "link",
+                  "image",
+                  "charmap",
+                  "preview",
+                  "anchor",
+                  "searchreplace",
+                  "visualblocks",
+                  "code",
+                  "fullscreen",
+                  "insertdatetime",
+                  "media",
+                  "table",
+                  "code",
+                  "help",
+                  "wordcount",
+                ],
+                toolbar:
+                  "undo redo | blocks | " +
+                  "bold italic forecolor | alignleft aligncenter " +
+                  "alignright alignjustify | bullist numlist outdent indent | " +
+                  "removeformat | help",
+                content_style:
+                  "body { font-family:Helvetica,Arial,sans-serif; font-size:14px }",
               },
               toolbar:
                 "undo redo | blocks | " +
