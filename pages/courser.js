@@ -12,7 +12,7 @@ import {
   useModal,
   Input,
 } from "@nextui-org/react";
-import { Layout } from "../component/HomeActivity/Layout.js";
+import { Layout } from "../component/Courser/Layout.js";
 
 export default function App() {
   const { setVisible, bindings } = useModal();
@@ -74,13 +74,13 @@ export default function App() {
           isCompact
           isCursorHighlightRounded
         >
-          <Navbar.Link isActive href="/">
-            home
-          </Navbar.Link>
+          <Navbar.Link href="/">home</Navbar.Link>
 
           <Navbar.Link onClick={() => setVisible(true)}>research</Navbar.Link>
 
-          <Navbar.Link href="/community">community</Navbar.Link>
+          <Navbar.Link isActive href="/community">
+            community
+          </Navbar.Link>
 
           <Navbar.Link href="/medical">medical</Navbar.Link>
         </Navbar.Content>

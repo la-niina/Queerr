@@ -19,7 +19,7 @@ import { Layout } from "../component/Community/Layout.js";
 
 export default function App() {
   const { setVisible, bindings } = useModal();
-
+ 
   const menuList = [
     {
       title: "TRANS & NON-BINARY REPO",
@@ -42,6 +42,7 @@ export default function App() {
       href: "#",
     },
   ];
+
   return (
     <Layout>
       <Navbar isCompact variant="sticky">
@@ -90,7 +91,14 @@ export default function App() {
 
         <Navbar.Content>
           <Navbar.Link>
-            <Button size="sm" auto color="secondary" rounded flat>
+            <Button
+              size="sm"
+              auto
+              color="secondary"
+              rounded
+              flat
+              onClick={() => (window.location = "/courser")}
+            >
               +
             </Button>
           </Navbar.Link>
@@ -180,10 +188,10 @@ export default function App() {
 
       <Modal
         scroll
-        width="400px"
+        width="600px"
         css={{
-          marginLeft: "$10",
-          marginRight: "$10",
+          marginLeft: "$5",
+          marginRight: "$5",
         }}
         aria-labelledby="modal-title"
         aria-describedby="modal-description"

@@ -1,3 +1,7 @@
 body::-webkit-scrollbar{
   display: none;
 }
+
+.custom-tinymce-body-class .tox-tinymce {
+  z-index: 1000 !important; /* Adjust the z-index value as needed */
+}
