@@ -1,6 +1,5 @@
 import "../styles/globals.css";
 import Head from "next/head.js";
-import { SharedContextProvider } from "./sharedContext";
 
 import { createTheme, NextUIProvider } from "@nextui-org/react";
 const theme = createTheme({
@@ -40,9 +39,7 @@ export default function App({ Component, pageProps }) {
         <meta property="og:type" content="website" />
         <meta name="twitter:image:alt" content="Queerr Logo" />
       </Head>
-      <SharedContextProvider>
-        <Component {...pageProps} />
-      </SharedContextProvider>
+      <Component {...pageProps} />
     </NextUIProvider>
   );
 }

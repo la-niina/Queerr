@@ -1,21 +1,14 @@
 import {
-  Text,
   Spacer,
   Grid,
   Col,
   Button,
-  Image,
-  Card,
-  Modal,
-  useModal,
   Input,
-  Link,
-  Textarea,
 } from "@nextui-org/react";
 import { useRouter } from "next/router";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef, useState } from "react";
 import { database } from "../../firebase";
 import { ref, push, set, serverTimestamp } from "firebase/database";
 import { Editor } from "@tinymce/tinymce-react";

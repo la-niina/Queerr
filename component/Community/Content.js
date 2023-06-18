@@ -1,17 +1,12 @@
 import {
   Text,
-  Spacer,
   Grid,
   Col,
-  Button,
   Image,
   Card,
   Modal,
   useModal,
   Input,
-  Link,
-  Textarea,
-  Row,
 } from "@nextui-org/react";
 import { Editor } from "@tinymce/tinymce-react";
 import { React, useEffect, useState } from "react";
