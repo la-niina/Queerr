@@ -149,7 +149,7 @@ export const Content = () => {
       >
         <Modal.Header>
           <Col>
-            <Text h2 id="modal-title">
+            <Text h4 id="modal-title">
               {courserData.title}
             </Text>
           </Col>
