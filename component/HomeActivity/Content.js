@@ -7,12 +7,15 @@ import {
   Image,
   Card,
 } from "@nextui-org/react";
-import { Box } from "./Box.js";
 
 export const Content = () => {
   return (
     <>
-      <Grid.Container>
+      <Grid.Container
+        css={{
+          h: "auto",
+        }}
+      >
         <Grid xs={12} sm={6}>
           <Col
             css={{

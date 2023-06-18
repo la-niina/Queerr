@@ -59,11 +59,8 @@ export default function App() {
           <Navbar.Link isActive href="/">
             home
           </Navbar.Link>
-
           <Navbar.Link onClick={() => setVisible(true)}>research</Navbar.Link>
-
-          <Navbar.Link href="/">community</Navbar.Link>
-
+          <Navbar.Link href="/community">community</Navbar.Link>
           <Navbar.Link href="/medical">medical</Navbar.Link>
         </Navbar.Content>
 

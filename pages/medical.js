@@ -3,24 +3,42 @@ import {
   Button,
   Text,
   Image,
-  Dropdown,
   Card,
   Link,
   Grid,
   Col,
-  Collapse,
   Spacer,
-  Row,
   Modal,
   useModal,
   Input,
 } from "@nextui-org/react";
 import { Layout } from "../component/QueerrActivity/Layout.js";
-import { icons } from "../component/Assets/Icons.js";
 
 export default function App() {
   const { setVisible, bindings } = useModal();
 
+  const menuList = [
+    {
+      title: "TRANS & NON-BINARY REPO",
+      href: "#",
+    },
+    {
+      title: "MEDICAL REPO",
+      href: "#",
+    },
+    {
+      title: "SEX EDUCATION REPO",
+      href: "#",
+    },
+    {
+      title: "YOUTH REPO",
+      href: "#",
+    },
+    {
+      title: "PHARMACY REPO",
+      href: "#",
+    },
+  ];
   return (
     <Layout>
       <Navbar isCompact variant="sticky">
@@ -56,15 +74,15 @@ export default function App() {
           isCompact
           isCursorHighlightRounded
         >
-          <Navbar.Link href="/">home</Navbar.Link>
+          <Navbar.Link href="/">
+            home
+          </Navbar.Link>
 
           <Navbar.Link onClick={() => setVisible(true)}>research</Navbar.Link>
 
-          <Navbar.Link href="/">community</Navbar.Link>
+          <Navbar.Link href="/community">community</Navbar.Link>
 
-          <Navbar.Link href="/medical" isActive>
-            medical
-          </Navbar.Link>
+          <Navbar.Link isActive href="/medical">medical</Navbar.Link>
         </Navbar.Content>
 
         <Navbar.Content>
@@ -73,8 +91,8 @@ export default function App() {
               Sponser
             </Button>
           </Navbar.Link>
+          <Navbar.Toggle showIn="xs" />
         </Navbar.Content>
-        <Navbar.Toggle showIn="xs" />
 
         <Navbar.Collapse css={{ zIndex: 20, p: 0 }}>
           <Navbar.CollapseItem>
@@ -95,7 +113,7 @@ export default function App() {
                 </Grid.Container>
               </Card.Header>
 
-              <Card.Body css={{ py: "$2" }}>
+              <Card.Body>
                 <Text>
                   At Queerr, we believe in building a better future for all
                   LGBTQIA+ individuals in Africa and beyond. Join us in our
@@ -103,16 +121,6 @@ export default function App() {
                   all.
                 </Text>
               </Card.Body>
-              <Card.Footer>
-                <Link
-                  icon
-                  color="primary"
-                  target="_blank"
-                  href="https://queerr.vercel.app/"
-                >
-                  Moluccus
-                </Link>
-              </Card.Footer>
             </Card>
           </Navbar.CollapseItem>
 
@@ -122,28 +130,20 @@ export default function App() {
               css={{ width: "100%", padding: "10px", cursor: "pointer" }}
             >
               <Text h3 weight="bold" onClick={() => (window.location = "/")}>
-                Home
+                home
               </Text>
             </Card>
           </Navbar.CollapseItem>
 
           <Navbar.CollapseItem>
-            <Collapse title="Sexual orientation" shadow css={{ width: "100%" }}>
-              <Col>
-                <Text
-                  h3
-                  weight="bold"
-                  onClick={() => (window.location = "/flag")}
-                >
-                  Sexual orientation
-                </Text>
-                <Spacer y={1} />
-                <Text h3 weight="bold" onClick={() => (window.location = "#")}>
-                  Usage Metrics
-                </Text>
-                <Spacer y={1} />
-              </Col>
-            </Collapse>
+            <Card
+              isHoverable
+              css={{ width: "100%", padding: "10px", cursor: "pointer" }}
+            >
+              <Text h3 weight="bold" onClick={() => setVisible(true)}>
+                research
+              </Text>
+            </Card>
           </Navbar.CollapseItem>
 
           <Navbar.CollapseItem>
@@ -161,7 +161,7 @@ export default function App() {
                 weight="bold"
                 onClick={() => (window.location = "/queerrcard")}
               >
-                Queerr insurance
+                medical
               </Text>
             </Card>
           </Navbar.CollapseItem>
@@ -189,111 +189,18 @@ export default function App() {
           />
         </Modal.Header>
         <Modal.Body>
-          <Col>
-            <Card
-              css={{
-                w: "100%",
-              }}
-            >
-              <Card.Body
+          {menuList.map((item, index) => (
+            <Col key={index}>
+              <Text
+                weight="bold"
                 css={{
                   w: "100%",
                 }}
               >
-                <Text
-                  css={{
-                    w: "100%",
-                  }}
-                >
-                  Home
-                </Text>
-              </Card.Body>
-            </Card>
-
-            <Spacer y={1} />
-            <Card
-              css={{
-                w: "100%",
-              }}
-            >
-              <Card.Body
-                css={{
-                  w: "100%",
-                }}
-              >
-                <Text
-                  css={{
-                    w: "100%",
-                  }}
-                >
-                  Home
-                </Text>
-              </Card.Body>
-            </Card>
-
-            <Spacer y={1} />
-            <Card
-              css={{
-                w: "100%",
-              }}
-            >
-              <Card.Body
-                css={{
-                  w: "100%",
-                }}
-              >
-                <Text
-                  css={{
-                    w: "100%",
-                  }}
-                >
-                  Home
-                </Text>
-              </Card.Body>
-            </Card>
-
-            <Spacer y={1} />
-            <Card
-              css={{
-                w: "100%",
-              }}
-            >
-              <Card.Body
-                css={{
-                  w: "100%",
-                }}
-              >
-                <Text
-                  css={{
-                    w: "100%",
-                  }}
-                >
-                  Home
-                </Text>
-              </Card.Body>
-            </Card>
-
-            <Spacer y={1} />
-            <Card
-              css={{
-                w: "100%",
-              }}
-            >
-              <Card.Body
-                css={{
-                  w: "100%",
-                }}
-              >
-                <Text
-                  css={{
-                    w: "100%",
-                  }}
-                >
-                  Home
-                </Text>
-              </Card.Body>
-            </Card>
-          </Col>
+                <Link>🎱 {item.title}</Link>
+              </Text>
+            </Col>
+          ))}
         </Modal.Body>
       </Modal>
     </Layout>
