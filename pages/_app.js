@@ -1,5 +1,6 @@
 import "../styles/globals.css";
 import Head from "next/head.js";
+import { Analytics } from '@vercel/analytics/react';
 
 import { createTheme, NextUIProvider } from "@nextui-org/react";
 const theme = createTheme({
@@ -40,6 +41,7 @@ export default function App({ Component, pageProps }) {
         <meta name="twitter:image:alt" content="Queerr Logo" />
       </Head>
       <Component {...pageProps} />
+      <Analytics />
     </NextUIProvider>
   );
 }
