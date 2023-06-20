@@ -159,107 +159,128 @@ export const Content = () => {
           </Col>
         </Modal.Header>
         <Modal.Body>
-          <Grid.Container>
-            <Grid
-              xs={12}
-              sm={9}
-              css={{
-                height: "100%",
-              }}
-            >
-              <Col
+          <Container>
+            <Grid.Container>
+              <Grid
+                xs={12}
+                sm={9}
                 css={{
                   height: "100%",
                 }}
               >
-                <Editor
-                  apiKey="zam7qc1yeyek6lwcjnyxu0fvz2jga3ssd2rc6aldylh1leny"
-                  value={courserData.content}
-                  disabled
-                  init={{
-                    height: "100%",
-                    width: "100%",
-                    inline: true,
-                    selector: "textarea",
-                    highlight_on_focus: true,
-                    promotion: true,
-                    plugins: ["quickbars"],
-                    toolbar: false,
-                    menubar: false,
-                    content_style:
-                      "body { font-family:Helvetica,Arial,sans-serif; font-size:14px }",
-                  }}
-                />
-              </Col>
-            </Grid>
+                <Container>
+                  <Col
+                    css={{
+                      height: "100%",
+                    }}
+                  >
+                    <Editor
+                      apiKey="zam7qc1yeyek6lwcjnyxu0fvz2jga3ssd2rc6aldylh1leny"
+                      value={courserData.content}
+                      disabled
+                      init={{
+                        height: "100%",
+                        width: "100%",
+                        inline: true,
+                        selector: "textarea",
+                        highlight_on_focus: true,
+                        promotion: true,
+                        plugins: ["quickbars"],
+                        toolbar: false,
+                        menubar: false,
+                        content_style:
+                          "body { font-family:Helvetica,Arial,sans-serif; font-size:14px;}, img { border-radius: 20px;}",
+                      }}
+                    />
+                  </Col>
+                </Container>
+              </Grid>
 
-            <Grid xs={12} sm={3}>
-              <Col
-                css={{
-                  p: "$5",
-                  justifyContent: "center",
-                  alignContent: "center",
-                  alignItems: "center",
-                }}
-              >
-                <Text h3>Looking for something?</Text>
-                <Input
+              <Grid xs={12} sm={3}>
+                <Col
                   css={{
-                    w: "100%",
-                  }}
-                  labelRight=".org" 
-                />
-                <Spacer y={1} />
-                <Text h3>Subscribe to Podcast</Text>
-                <Button
-                  rounded
-                  auto
-                  bordered
-                  color="gradient"
-                  className="pp-ssb-btn"
-                  css={{
-                    w: "100%",
-                    background:
-                      "radial-gradient(circle,transparent 1%,#ebebeb 1%) center/15000% #ebebeb",
+                    p: "$5",
+                    justifyContent: "center",
+                    alignContent: "center",
+                    alignItems: "center",
+                    grid: "2",
                   }}
                 >
-                  Podcast
-                </Button>
-                <Spacer y={1} />
+                  <Text h3>Looking for something?</Text>
+                  <Input
+                    css={{
+                      w: "100%",
+                    }}
+                    labelRight=".org"
+                  />
+                  <Spacer y={1} />
+                  <Text h3>Subscribe to Podcast</Text>
 
-                <Button
-                  rounded
-                  auto
-                  bordered
-                  color="gradient"
-                  className="pp-ssb-btn"
-                  css={{
-                    w: "100%",
-                    background:
-                      "radial-gradient(circle,transparent 1%,#ebebeb 1%) center/15000% #ebebeb",
-                  }}
-                >
-                  Podcast
-                </Button>
-                <Spacer y={1} />
+                  <Grid.Container gap={1}>
+                    <Grid xs={6} sm={4.5}>
+                      <Button
+                        rounded
+                        auto
+                        bordered
+                        color="gradient"
+                        className="pp-ssb-btn"
+                      >
+                        Podcast
+                      </Button>
+                    </Grid>
 
-                <Button
-                  rounded
-                  auto
-                  bordered
-                  color="gradient"
-                  className="pp-ssb-btn"
-                  css={{
-                    w: "100%",
-                    background:
-                      "radial-gradient(circle,transparent 1%,#ebebeb 1%) center/15000% #ebebeb",
-                  }}
-                >
-                  Podcast
-                </Button>
-              </Col>
-            </Grid>
-          </Grid.Container>
+                    <Grid xs={6} sm={4.5}>
+                      <Button
+                        rounded
+                        auto
+                        bordered
+                        color="gradient"
+                        className="pp-ssb-btn"
+                      >
+                        Youtube
+                      </Button>
+                    </Grid>
+
+                    <Grid xs={6} sm={4.5}>
+                      <Button
+                        rounded
+                        auto
+                        bordered
+                        color="gradient"
+                        className="pp-ssb-btn"
+                      >
+                        Twitter
+                      </Button>
+                    </Grid>
+
+                    <Grid xs={6} sm={4.5}>
+                      <Button
+                        rounded
+                        auto
+                        bordered
+                        color="gradient"
+                        className="pp-ssb-btn"
+                      >
+                        Tiktok
+                      </Button>
+                    </Grid>
+
+                    <Grid xs={6} sm={4.5}>
+                      <Button
+                        rounded
+                        auto
+                        bordered
+                        color="gradient"
+                        className="pp-ssb-btn"
+                      >
+                        Facebook
+                      </Button>
+                    </Grid>
+                  </Grid.Container>
+                </Col>
+              </Grid>
+            </Grid.Container>
+          </Container>
         </Modal.Body>
       </Modal>
     </Container>
