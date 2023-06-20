@@ -33,7 +33,11 @@ export default function App({ Component, pageProps }) {
           property="og:description"
           content="Queerr is an organization providing information and support to LGBTQIA+ persons in Africa. We also plan to provide financial and informational support for hormonal transitioning and train individuals in various skills for income opportunities."
         />
-        <meta property="og:image" content="/next.svg" />
+        <meta property="twitter:image" content="/community.png"/>
+        <meta property="twitter:url" content="https://queerr.vercel.app"/>
+        <meta property="twitter:description" content="Queerr is an organization providing information and support to LGBTQIA+ persons in Africa. We also plan to provide financial and informational support for hormonal transitioning and train individuals in various skills for income opportunities."></meta>
+        <meta property="twitter:title" content="Queerr - Supporting LGBTQIA+ Persons in Africa"/>
+        <meta property="og:image" content="/logo.svg" />
         <meta property="og:url" content="https://queerr.vercel.app" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="og:site_name" content="Queerr" />
