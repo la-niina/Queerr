@@ -83,6 +83,7 @@ export default function App() {
           <Navbar.Link href="/community">community</Navbar.Link>
 
           <Navbar.Link href="/medical">medical</Navbar.Link>
+          <Navbar.Link href="/myths">myths</Navbar.Link>
         </Navbar.Content>
 
         <Navbar.Content>
@@ -119,7 +120,11 @@ export default function App() {
 
           <Navbar.CollapseItem>
             <Card isHoverable css={{ width: "100%", padding: "10px" }}>
-              <Text h3 weight="bold" onClick={() => (window.location = "/community")}>
+              <Text
+                h3
+                weight="bold"
+                onClick={() => (window.location = "/community")}
+              >
                 Community
               </Text>
             </Card>
@@ -136,9 +141,21 @@ export default function App() {
               </Text>
             </Card>
           </Navbar.CollapseItem>
-          
+
           <Navbar.CollapseItem>
-          <Spacer y={5} />
+            <Card isHoverable css={{ width: "100%", padding: "10px" }}>
+              <Text
+                h3
+                weight="bold"
+                onClick={() => (window.location = "/myths")}
+              >
+                myths
+              </Text>
+            </Card>
+          </Navbar.CollapseItem>
+
+          <Navbar.CollapseItem>
+            <Spacer y={5} />
           </Navbar.CollapseItem>
         </Navbar.Collapse>
       </Navbar>

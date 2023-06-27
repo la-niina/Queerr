@@ -142,6 +142,18 @@ export default function App() {
           </Navbar.CollapseItem>
 
           <Navbar.CollapseItem>
+              <Card isHoverable css={{ width: "100%", padding: "10px" }}>
+                <Text
+                  h3
+                  weight="bold"
+                  onClick={() => (window.location = "/myths")}
+                >
+                  myths
+                </Text>
+              </Card>
+            </Navbar.CollapseItem>
+
+          <Navbar.CollapseItem>
             <Spacer y={5} />
           </Navbar.CollapseItem>
         </Navbar.Collapse>

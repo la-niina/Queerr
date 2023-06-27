@@ -6,30 +6,55 @@ import {
   Button,
   Image,
   Card,
+  Row,
 } from "@nextui-org/react";
 
 export const Content = () => {
+  const list = [
+    {
+      title: "Enquiries",
+      content:
+        "If you would like to access our online health and wellbeing services at our gender clinic, please click here.",
+      url: "/",
+    },
+    {
+      title: "Professionals",
+      content:
+        "If you would like to talk to a Professionals in a perticular field about anything please click.",
+      url: "/",
+    },
+    {
+      title: "Other Enquiries",
+      content:
+        "If you have any inquirey or question or suggestion that you would like to share please feel free , just here over here.",
+      url: "/",
+    }
+  ];
+
   return (
     <>
       <Grid.Container
         css={{
           h: "auto",
           justifyContent: "center",
-          alignContent: "center"
+          alignContent: "center",
         }}
       >
-        <Grid xs={12} sm={6}
-        css={{
-          justifyContent: "center",
-          alignContent: "center",
-          justifyItems: "center",
-          alignItems: "center"
-        }}>
+        <Grid
+          xs={12}
+          sm={6}
+          css={{
+            justifyContent: "center",
+            alignContent: "center",
+            justifyItems: "center",
+            alignItems: "center",
+          }}
+        >
           <Col
             css={{
               padding: "20px",
               justifyContent: "center",
-              alignContent: "center"
+              alignContent: "center",
             }}
           >
             <Text
@@ -56,7 +81,7 @@ export const Content = () => {
             </Text>
             <Button
               auto
-              color="primary"
+              color="gradient"
               rounded
               flat
               css={{
@@ -82,9 +107,33 @@ export const Content = () => {
         </Grid>
       </Grid.Container>
 
-      <Grid.Container>
-        
+      <Grid.Container gap={1} justify="center">
+        {list.map((item, index) => (
+          <Grid xs={6} sm={3} key={index}>
+            <Card isPressable>
+              <Card.Body>
+                <Col>
+                  <Text h3 weight="bold">
+                    {item.title}
+                  </Text>
+                  <Text
+                    h4
+                    css={{
+                      color: "$accents7",
+                      fontWeight: "$semibold",
+                      fontSize: "$sm",
+                    }}
+                  >
+                    {item.content}
+                  </Text>
+                </Col>
+              </Card.Body>
+            </Card>
+          </Grid>
+        ))}
       </Grid.Container>
+
+      <Grid.Container></Grid.Container>
 
       <Grid.Container>
         <Grid
