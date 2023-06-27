@@ -151,41 +151,6 @@ h6 {
   border: 1px solid #d8d8d8;
   transition-duration: 0.5s;
 }
-@media screen and (min-width: 50em) {
-  .flex-row-ns {
-    -webkit-flex-direction: row;
-    flex-direction: row;
-  }
-}
-.flex-column {
-  -webkit-flex-direction: column;
-  flex-direction: column;
-}
-.flex {
-  display: -webkit-flex;
-  display: flex;
-}
-a {
-  color: #112f9c;
-}
-
-@media screen and (min-width: 50em) {
-  .w-40-ns {
-    width: 40%;
-  }
-}
-.mb2 {
-  margin-bottom: 0.5rem;
-}
-
-@media screen and (min-width: 50em){
-.pl4-ns {
-    padding-left: 2rem;
-}}
-@media screen and (min-width: 50em){
-.w-60-ns {
-    width: 60%;
-}}
 
 .strikethrough {
   text-decoration-line: line-through;

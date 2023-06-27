@@ -55,7 +55,7 @@ export const Content = () => {
         </Grid>
       </Grid.Container>
 
-      <Grid.Container>
+      <Grid.Container className="card">
         <Grid xs={12} sm={6}>
           <Col>
             <Text h1>Misconception</Text>
@@ -85,7 +85,7 @@ export const Content = () => {
       </Grid.Container>
 
       <Spacer y={1} />
-      <Grid.Container>
+      <Grid.Container className="card">
         <Grid xs={12} sm={6}>
           <Col>
             <Text h1>Misguided</Text>
@@ -108,7 +108,7 @@ export const Content = () => {
       </Grid.Container>
 
       <Spacer y={1} />
-      <Grid.Container>
+      <Grid.Container className="card">
         <Grid xs={12} sm={6}>
           <Col>
             <Text h1>Myth</Text>
@@ -133,7 +133,7 @@ export const Content = () => {
       </Grid.Container>
 
       <Spacer y={1} />
-      <Grid.Container>
+      <Grid.Container className="card">
         <Grid xs={12} sm={6}>
           <Col>
             <Text h1>Misconception</Text>
@@ -155,7 +155,7 @@ export const Content = () => {
       </Grid.Container>
 
       <Spacer y={1} />
-      <Grid.Container>
+      <Grid.Container className="card">
         <Grid xs={12} sm={6}>
           <Col>
             <Text h1>Myth</Text>
@@ -180,7 +180,7 @@ export const Content = () => {
       </Grid.Container>
 
       <Spacer y={1} />
-      <Grid.Container>
+      <Grid.Container className="card">
         <Grid xs={12} sm={6}>
           <Col>
             <Text h1>Myth</Text>
@@ -205,7 +205,7 @@ export const Content = () => {
       </Grid.Container>
 
       <Spacer y={1} />
-      <Grid.Container>
+      <Grid.Container className="card">
         <Grid xs={12} sm={6}>
           <Col>
             <Text h1>Myth</Text>
@@ -230,7 +230,7 @@ export const Content = () => {
       </Grid.Container>
 
       <Spacer y={1} />
-      <Grid.Container>
+      <Grid.Container className="card">
         <Grid xs={12} sm={6}>
           <Col>
             <Text h1>Stereotype</Text>
@@ -278,7 +278,7 @@ export const Content = () => {
       </Grid.Container>
 
       <Spacer y={1} />
-      <Grid.Container>
+      <Grid.Container className="card">
         <Grid xs={12} sm={6}>
           <Col>
             <Text h1>Misconception</Text>
@@ -302,7 +302,7 @@ export const Content = () => {
       </Grid.Container>
 
       <Spacer y={1} />
-      <Grid.Container>
+      <Grid.Container className="card">
         <Grid xs={12} sm={6}>
           <Col>
             <Text h1>Linguistic Misunderstanding</Text>
@@ -334,7 +334,7 @@ export const Content = () => {
       </Grid.Container>
 
       <Spacer y={1} />
-      <Grid.Container>
+      <Grid.Container className="card">
         <Grid xs={12} sm={6}>
           <Col>
             <Text h1>Propaganda</Text>
@@ -359,7 +359,7 @@ export const Content = () => {
       </Grid.Container>
 
       <Spacer y={1} />
-      <Grid.Container>
+      <Grid.Container className="card">
         <Grid xs={12} sm={6}>
           <Col>
             <Text h1>Misconception</Text>
